@@ -83,18 +83,22 @@
     height: 4.5vh;
     width: 4.5vh;
     background-color: #656565;
-    border-radius:50%
+    border-radius: 50%;
 }
 .callbox {
     position: fixed;
     top: 11.7%;
     right: 3.6%;
+    opacity: 0;
     height: 24%;
     width: 4.5vh;
     background-color: #737272;
     border-radius: 15vh;
     offset-anchor: left;
-    
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-play-state: paused;
 }
 
 .premessagetext {
@@ -224,3 +228,8 @@
     font-family: "LogoFont";
     src: url("./fonts/DXLBaB-KSCpc-EUC-H.ttf") format("truetype");
 }
+
+@keyframes example {
+    0%   {top: 11.7%; right: 3.6%; height: 4%; width: 4.5vh;}
+    100% {top: 11.7%; right: 3.6%; height: 24%; width: 4.5vh;}
+  }

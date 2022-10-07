@@ -50,8 +50,14 @@ YYYY             YYYYZZZZZZZZZZZZZZZZZZZZZ
 <div class="messages"><p></p></div>
 <div class="messagebox"><p></p></div>
 <!--<div class="Topbarusername"><p></p></div>-->
-<div class="callbox"></div>
 
+<div id="callboxbar" class="callbox">
+</div>
+
+
+<div id="mainpfp">
+    <input type="image" class="Topbarpfp" onclick="pfpclickon()" src="https://cdn.discordapp.com/avatars/524932775787364362/b555f1eacfa64496b6f238c57e8e5c13.webp?size=40" alt="userimage"/>
+</div>
 
 
 
@@ -59,9 +65,9 @@ YYYY             YYYYZZZZZZZZZZZZZZZZZZZZZ
 <!--<p class="username">USERNAME</span></p>-->
 <!--<p class="usernamehashtag">#HASHTAG</span></p>-->
 <p class="image-logo">MOBILE SPEAKMORE</p>
-<img class="Topbarpfp" src="https://cdn.discordapp.com/avatars/524932775787364362/b555f1eacfa64496b6f238c57e8e5c13.webp?size=40" alt="userimage">
+<!--<img class="Topbarpfp" src="https://cdn.discordapp.com/avatars/524932775787364362/b555f1eacfa64496b6f238c57e8e5c13.webp?size=40" alt="userimage">-->
+
 <p class="messagelabel">Message OlaYZen</span></p>
-<div id="sidebardarken" class="sidebardarken"></div>
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a onclick="closeNav()" >IN DEVELOPMENT</a>
@@ -71,16 +77,17 @@ YYYY             YYYYZZZZZZZZZZZZZZZZZZZZZ
     <button class="openbtn" onclick="openNav()">☰</button>  
 </div>
 
+
 <!--<p class="username"><span style="position: fixed;left: 20%;top: 30px;color: rgb(255, 255, 255);background-color: transparent;">OlaYZen</span></p>-->
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
     if (screen.width >= 699) {
         window.location.reload();
     document.location = "https://speakmore.olayzen.lol/";
     }
     
-</script>
+</script>-->
 <script>
     function openNav() {
         document.getElementById("mySidebar").style.width = "100%";
@@ -90,6 +97,11 @@ YYYY             YYYYZZZZZZZZZZZZZZZZZZZZZ
     function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
+    }
+    function pfpclickon() {
+        document.getElementById("callboxbar").style.opacity = "100";
+        document.getElementById("callboxbar").style.animationPlayState = "running";
+        
     }
     </script>
 </body>
