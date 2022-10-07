@@ -54,6 +54,9 @@ YYYY             YYYYZZZZZZZZZZZZZZZZZZZZZ
 <div id="callboxbar" class="callbox">
 </div>
 
+<div id="callboxbarclosebutton">
+    <button class="callboxbarclosebuttonstyle" type="button">x</button>
+</div>
 
 <div id="mainpfp">
     <input type="image" class="Topbarpfp" onclick="pfpclickon()" src="https://cdn.discordapp.com/avatars/524932775787364362/b555f1eacfa64496b6f238c57e8e5c13.webp?size=40" alt="userimage"/>
@@ -101,6 +104,8 @@ YYYY             YYYYZZZZZZZZZZZZZZZZZZZZZ
     function pfpclickon() {
         document.getElementById("callboxbar").style.opacity = "100";
         document.getElementById("callboxbar").style.animationPlayState = "running";
+        document.getElementById("callboxbarclosebutton").style.opacity = "100";
+        document.getElementById("callboxbarclosebutton").style.animationPlayState = "running";
         
     }
     </script>
