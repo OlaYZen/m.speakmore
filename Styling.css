@@ -96,7 +96,34 @@
     border-radius: 15vh;
     offset-anchor: left;
     animation-name: example;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-play-state: paused;
+}
+
+.callboxbarclosebuttonstyle{
+    right: 4.20%;
+    position: fixed;
+    top: 11.7%;
+    opacity: 0;
+    height: 24%;
+    width: 4.5vh;
+    background-color: #737272;
+    border-radius: 15vh;
+    offset-anchor: left;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-play-state: paused;
+}
+
+.callboxclosebtn{
+    top: 11.7%;
+    right: 3.6%;
+    height: 27%;
+    width: 4.5vh;
+    animation-name: example;
+    animation-duration: 1s;
     animation-delay: 0s;
     animation-play-state: paused;
 }
@@ -232,4 +259,9 @@
 @keyframes example {
     0%   {top: 11.7%; right: 3.6%; height: 4%; width: 4.5vh;}
     100% {top: 11.7%; right: 3.6%; height: 24%; width: 4.5vh;}
+  }
+
+  @keyframes example2 {
+    0%   {right: 4.20%; top: 4.7%; opacity: 0;}
+    100% {right: 4.20%; top: 31.7%; opacity: 100;}
   }
